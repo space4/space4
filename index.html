@@ -8,6 +8,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TSFF2HP');</script>
 <!-- End Google Tag Manager -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#coworking-button").click(function(){
+        $("#coworking-contact-details").show(200);
+        console.log("Clicked!");
+    });
+    $("#meeting-button").click(function(){
+        $("#meeting-contact-details").show(200);
+        console.log("Clicked!");
+    });
+    $("#event-space-button").click(function(){
+        $("#event-space-contact-details").show(200);
+        console.log("Clicked!");
+    });
+});
+</script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Space4 - a co-working and events space in Finsbury Park</title>
@@ -20,6 +39,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       h1 { font-family: "Poppins", sans-serif; f}
       h3 { font-family: "Poppins", sans-serif; }
       .content h1 {font-weight: "bold"; font-size: 46px; }
+      .contact-button {
+        color: white;
+        background-color: #33cccc;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        border: solid 1px grey;
+        padding: 10px;
+        font-size: 1rem;
+      }
+      .contact-strip {
+        padding: 0.75em;
+        clear: both;
+        margin-bottom: 2.5em;
+      }
+      #coworking-contact-details, #meeting-contact-details, #event-space-contact-details {
+        display:none;
+      }
     </style>
   </head>
   <body>
@@ -132,6 +169,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               We ask everyone who takes a desk to try to organise an event during their term here
             </li>
           </ul>
+          <div class="contact-strip">
+            <p>
+              <button id="coworking-button" class="contact-button" href="#">Contact us about coworking</button>
+            </p>
+            <div id="coworking-contact-details" class="contact-details">
+              <h4>Contact</h4>
+              <ul>
+                <li>Polly Robbins</li>
+                <li>+44 7556 539 232</li>
+                <li><a href="mailto:polly@outlandish.com">polly@outlandish.com</a></li>
+              </ul>
+            </div>
+          </div>
 
           <h3>A Space For Meeting</h3>
 
@@ -169,6 +219,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </li>
           </ul>
 
+          <div class="contact-strip">
+            <p>
+              <button id="meeting-button" class="contact-button">Contact us about meeting spaces</button>
+            </p>
+            <div id="meeting-contact-details" class="contact-details">
+              <h4>Contact</h4>
+              <ul>
+                <li>Polly Robbins</li>
+                <li>+44 7556 539 232</li>
+                <li><a href="mailto:polly@outlandish.com">polly@outlandish.com</a></li>
+              </ul>
+            </div>
+          </div>
+
           <h3>A Space For Events</h3>
 
           <p>
@@ -203,6 +267,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </tbody>
           </table>
 
+
+
           <h4>Facilities</h4>
           <ul>
             <li>
@@ -224,6 +290,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               Promotion via Outlandish’s social media channels and networks where appropriate
             </li>
           </ul>
+
+          <div class="contact-strip">
+            <p>
+              <button id="event-space-button" class="contact-button">Contact us about event space hire</button>
+            </p>
+            <div id="event-space-contact-details" class="contact-details">
+              <h4>Contact</h4>
+              <ul>
+                <li>Polly Robbins</li>
+                <li>+44 7556 539 232</li>
+                <li><a href="mailto:polly@outlandish.com">polly@outlandish.com</a></li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
