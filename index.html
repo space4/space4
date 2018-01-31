@@ -23,6 +23,12 @@ $(document).ready(function(){
         $("#event-space-contact-details").show(200);
         console.log("Clicked!");
     });
+  $(".event")
+    .filter(function(){
+      var date = new Date($(this).data('display-until')); 
+      return date < Date.now();
+    })
+    .hide()
 });
 </script>
 
