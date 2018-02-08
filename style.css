@@ -192,6 +192,18 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 	width: 70%;
 }
 
+@media screen and (max-width: 550px) {
+	.hero-content {
+		margin: 20px;
+		padding: 30px 40px;
+		width: 100%;
+	}
+
+	.hero h1 {
+    font-size: 6vw;
+	}
+}
+
 /* ----- Community -------------------- */
 
 .community-logos {
