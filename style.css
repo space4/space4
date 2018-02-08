@@ -162,6 +162,12 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 	font-size: 18px;
 }
 
+@media screen and (max-width: 550px) {
+	.section-image {
+		height: auto;
+	}
+}
+
 /* ----- Hero -------------------- */
 
 .hero-section {
