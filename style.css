@@ -136,6 +136,7 @@ a.navbar-item:hover, a.navbar-item.is-active, a.navbar-link:hover, a.navbar-link
 	object-fit: cover;
 	padding: 0px;
 	margin: 0px;
+	max-height: 70vh;
 }
 
 .section-list{
